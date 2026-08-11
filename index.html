@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>דרשו | להחיות את תורתו</title>
+    <!-- The hero still is the first thing painted, and the film is the
+         heaviest thing on the page; both are named here so the browser starts
+         them while it is still parsing, rather than after React mounts. -->
+    <link rel="preload" href="/assets/hero-poster.jpg" as="image" fetchpriority="high" />
+    <link rel="preload" href="/assets/hero.mp4" as="video" type="video/mp4" />
+
     <!-- The two faces that carry the first screen, fetched in parallel with
          the stylesheet so headings and body text paint in the real families
          straight away rather than swapping in afterwards. -->
@@ -18,8 +24,8 @@
       href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Heebo:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/assets/index-CT8L4h9m.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CR-d4BmO.css">
+    <script type="module" crossorigin src="/assets/index-BFgdqnku.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DHAbj-v2.css">
   </head>
   <body>
     <div id="root"></div>
